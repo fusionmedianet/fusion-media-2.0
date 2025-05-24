@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Inter, Roboto i Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@300;400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>About Us - Fusion Media</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+<!-- Mobile Menu Button -->
+<div class="mobile-menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay">
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="https://calendly.com/infusionmediafo/30min">Book a call</a></li>
+        </ul>
+    </div>
+</div>
+
+    <header class="hero about-hero">
+        <div class="logo">
+            <img src="logo-normal.png" alt="Fusion Media Logo" class="normal">
+            <img src="logo-glow.png" alt="Fusion Media Logo" class="blurred">
+        </div>
+        <h1>About Fusion Media</h1>
+        <p class="slogan">Connecting brands with the right audience</p>
+    </header>
+
+    <main class="about-content">
+        <section class="about-section">
+            <h2>Our Story</h2>
+            <div class="section-content left">
+                <p><span class="founder-highlight">Hi, I'm Alem Hodžić</span>, the founder of Fusion Media — a modern influencer marketing agency I started in November 2024. I'm 17 years old, currently a high school student, and a young entrepreneur with a deep passion for the online world.</p>
+                <p>I began working online as a freelancer when I was just 13 years old. Since then, I've learned a lot about digital business and built experience in different areas. Over time, I became especially interested in influencer marketing, and that's what led me to create Fusion Media.</p>
+            </div>
+        </section>
+    
+        <section class="about-section">
+            <h2>Our Approach</h2>
+            <div class="section-content right">
+                <p>Right now, I'm learning directly from experienced mentors in this field, which gives me the confidence to deliver strong results for every client I work with. I may be young, but I take every project seriously and always give my best.</p>
+                <p>At Fusion Media, my goal is simple — to help brands in gaming and tech spaces grow by connecting them with the right influencers. I believe in honest work, creative ideas, and building long-term relationships.</p>
+            </div>
+        </section>
+    
+        <section class="about-section">
+            <h2>Our Vision</h2>
+            <div class="section-content left">
+                <p>This is just the beginning, and I'm excited for what's ahead. We're building a network of trusted influencers and brands that share our values of authenticity and quality.</p>
+                <p>Our vision is to become the go-to agency for brands looking to make a real impact in the digital space, through strategic partnerships with influencers who truly resonate with their audience.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contact-info">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/fusionmedianet/?__pwa=1" target="_blank">
+                    <img src="ig.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/alem-hod%C5%BEi%C4%87-9b6a7a35a/" target="_blank">
+                    <img src="linked.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:info@fusionmedia.agency">
+                    <img src="mail.png" alt="Email">
+                </a>
+                <a href="https://www.youtube.com/@FusionMediaNET" target="_blank">
+                    <img src="yt.png" alt="YouTube">
+                </a>
+            </div>
+            <p class="rights-reserved">© 2024 Fusion Media. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Fallback ako scripts.js ne uradi
+        if(typeof mobileMenu === 'undefined') {
+            document.addEventListener('DOMContentLoaded', function() {
+                const btn = document.querySelector('.mobile-menu-btn');
+                const overlay = document.querySelector('.mobile-menu-overlay');
+                
+                btn?.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>

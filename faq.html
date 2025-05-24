@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Inter i Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Kopirajte isti <head> dio kao iz index.html -->
+    <title>FAQ - Fusion Media</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+<!-- Mobile Menu Button -->
+<div class="mobile-menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay">
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="https://calendly.com/infusionmediafo/30min">Book a call</a></li>
+        </ul>
+    </div>
+</div>
+
+    <header class="hero faq-hero">
+        <div class="logo">
+            <img src="logo-normal.png" alt="Fusion Media Logo" class="normal">
+            <img src="logo-glow.png" alt="Fusion Media Logo" class="blurred">
+        </div>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <section class="faq-content">
+        <div class="faq-item">
+            <h3 class="faq-question">What does Fusion Media do?</h3>
+            <p class="faq-answer">We help brands grow by working with the right influencers. We create simple and smart influencer marketing campaigns.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3 class="faq-question">Who do you work with?</h3>
+            <p class="faq-answer">We work with brands in finance, business, lifestyle, and similar areas. We also work with influencers who match those brands.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">How can I work with you?</h3>
+            <p class="faq-answer">Just send us a message through our contact page. We will reply fast and talk about how we can help your brand.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">How much does it cost?</h3>
+            <p class="faq-answer">Prices are different for each project. It depends on what you need. Contact us and we will give you a clear offer.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Do you work with small brands?</h3>
+            <p class="faq-answer">Yes! We work with both small and big brands. If you're just starting, we’re happy to help you grow.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Why should we choose Fusion Media?</h3>
+            <p class="faq-answer">We are honest, focused, and creative. Even though we are new, we work hard and care about real results.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3 class="faq-question">Where are you based?</h3>
+            <p class="faq-answer">We are based in Bosnia, but we work with clients from anywhere in the world.</p>
+        </div>
+    </section>
+
+    <!-- Footer (isti kao na index.html) -->
+    <footer class="contact-info">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/fusionmedianet/?__pwa=1" target="_blank">
+                    <img src="ig.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/alem-hod%C5%BEi%C4%87-9b6a7a35a/" target="_blank">
+                    <img src="linked.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:info@fusionmedia.agency">
+                    <img src="mail.png" alt="Email">
+                </a>
+                <a href="https://www.youtube.com/@FusionMediaNET" target="_blank">
+                    <img src="yt.png" alt="YouTube">
+                </a>
+            </div>
+            <p class="rights-reserved">© 2024 Fusion Media. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Fallback ako scripts.js ne uradi
+        if(typeof mobileMenu === 'undefined') {
+            document.addEventListener('DOMContentLoaded', function() {
+                const btn = document.querySelector('.mobile-menu-btn');
+                const overlay = document.querySelector('.mobile-menu-overlay');
+                
+                btn?.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>

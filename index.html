@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Inter i Roboto -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- Poppins (opcionalno) -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Animacija za fade-in efekat */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Styling za odstojanje između sekcija */
+        section {
+            margin: 60px 0;
+            min-height: 500px; /* Povećana visina sekcija */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-menu-btn-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+<!-- Mobile Menu Button -->
+<div class="mobile-menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay">
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="https://calendly.com/infusionmediafo/30min">Book a call</a></li>
+        </ul>
+    </div>
+</div>
+    <!-- Top Bar with Instagram and LinkedIn Buttons -->
+    <!-- 
+<div class="top-bar fade-in" id="top-bar">
+    <div class="social-icons">
+        <a href="https://www.instagram.com/fusionmedianet/?__pwa=1" target="_blank">
+            <img src="ig.png" alt="Instagram">
+        </a>
+    </div>
+    <div class="brand-name">
+        <p>FUSION MEDIA</p>
+    </div>
+</div> 
+-->
+
+
+    <header class="hero fade-in" id="hero">
+        <div class="logo">
+            <img src="logo-normal.png" alt="Normalni logo" class="normal">
+            <img src="logo-glow.png" alt="Blurovani logo" class="blurred">
+        </div>
+        
+        <p class="slogan">We Connect. You Grow.</p>
+    </header>
+    
+    <section class="who-are-we fade-in" id="who-are-we">
+        <h2>Who Are We?</h2>
+        <p>Fusion Media is a simple and focused agency that helps gaming and tech brands grow through smart influencer marketing. We connect the right companies with the right creators and run campaigns that feel authentic and deliver results.</p>
+    </section>
+
+<!-- How It Works - 4 horizontalne kartice -->
+<section class="how-it-works fade-in" id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="horizontal-cards">
+        <div class="work-card">
+            <div class="step-number">1</div>
+            <h3>We Learn About You</h3>
+            <p>We ask simple questions to understand your brand and goals.</p>
+        </div>
+        <div class="work-card">
+            <div class="step-number">2</div>
+            <h3>We Find the Right Influencers</h3>
+            <p>We look for creators who match your brand and speak to your audience.</p>
+        </div>
+        <div class="work-card">
+            <div class="step-number">3</div>
+            <h3>We Plan the Campaign</h3>
+            <p>We build the content plan, check the posts, and set timelines.</p>
+        </div>
+        <div class="work-card">
+            <div class="step-number">4</div>
+            <h3>We Launch and Track</h3>
+            <p>We launch the campaign and track results closely.</p>
+        </div>
+    </div>
+</section>
+
+    <section class="video-presentation fade-in" id="video-presentation">
+        <div class="video-presentation">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YTuWcXdOMHQ?si=CziKVbgwXyrtV_50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>                
+
+        <!-- Book a Call Button -->
+<div class="book-call-button">
+    <a href="https://calendly.com/infusionmediafo/30min" target="_blank" class="btn-book-call">Book a Call</a>
+</div>
+    </section>
+
+<!-- Why Fusion Media - vertikalne kartice -->
+<section class="why-fusion-media fade-in" id="why-fusion-media">
+    <h2>Why Fusion Media?</h2>
+    <div class="vertical-cards">
+        <div class="benefit-card">
+            <h3>Perfect Matches</h3>
+            <p>We connect you with influencers that fit your brand and message.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>Trusted Creators</h3>
+            <p>Work with influencers who have strong relationships with their followers.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>End-to-End Support</h3>
+            <p>From finding influencers to managing the campaign—we take care of it all.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>Authentic Partnerships</h3>
+            <p>We make sure the content feels natural and true to the influencer's style.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>Fair & Transparent Deals</h3>
+            <p>No hidden costs. You only pay for results.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>Long-Term Growth</h3>
+            <p>We build long-term partnerships that help your brand grow.</p>
+        </div>
+        <div class="benefit-card">
+            <h3>Local and Global Reach</h3>
+            <p>We connect you with influencers from your country and worldwide.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials sekcija je privremeno sakrivena -->
+    <section class="testimonials fade-in" id="testimonials" style="display: none;">
+        <h2>Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-item">Testimonial 1</div>
+            <div class="testimonial-item">Testimonial 2</div>
+            <div class="testimonial-item">Testimonial 3</div>
+        </div>
+    </section>
+
+    <section class="brands-influencers fade-in" id="brands-influencers">
+        <h2>Brands & Influencers</h2>
+        <div class="brands-container">
+            <!-- Dodajte logotipe ovdje -->
+            <div class="brand-item">
+                <img src="brand1.png" alt="Brand 1">
+        </div>
+    </section>
+
+    <section class="text-glowing-container">
+        <p id="text1" class="fade-in">
+            Now, if all of this sounds good and you're ready to <span class="glowing-text">skyrocket your influence</span> and <span class="glowing-text">revenue</span>...
+        </p>
+        <p id="text2" class="fade-in">
+            <strong>book a call</strong>
+        </p>
+    </section>
+                
+    <section class="schedule-call fade-in" id="schedule-call">
+        <h2>Schedule a Call</h2>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/infusionmediafo/30min" style="min-width:320px;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Back to Top Button -->
+<div class="back-to-top">
+    <a href="#" class="btn-back-to-top">Back to Top</a>
+</div>
+    </section>
+
+    <!-- Ovdje su postojeće sekcije... -->
+
+
+
+<!-- Ovdje je postojeći footer... -->
+
+    <footer class="contact-info">
+        <div class="footer-content">
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/fusionmedianet/?__pwa=1" target="_blank">
+                    <img src="ig.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/alem-hod%C5%BEi%C4%87-9b6a7a35a/" target="_blank">
+                    <img src="linked.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:info@fusionmedia.agency">
+                    <img src="mail.png" alt="Email">
+                </a>
+                <a href="https://www.youtube.com/@FusionMediaNET" target="_blank">
+                    <img src="yt.png" alt="YouTube">
+                </a>
+            </div>
+    
+            <!-- All Rights Reserved -->
+            <div class="rights-reserved">
+                <p>&copy; 2025 Fusion Media. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Fallback ako scripts.js ne uradi
+        if(typeof mobileMenu === 'undefined') {
+            document.addEventListener('DOMContentLoaded', function() {
+                const btn = document.querySelector('.mobile-menu-btn');
+                const overlay = document.querySelector('.mobile-menu-overlay');
+                
+                btn?.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
